@@ -1,0 +1,81 @@
+.window {
+  background-color: white;
+  font-family: "Courier New", monospace;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  padding: 2px;
+  border: 1px solid black;
+  box-shadow: inset 0 0 0 1px black, 1px 1px 0 1px #ffffff, 2px 2px 0 1px #404040, -1px -1px 0 1px #c0c0c0; }
+
+.window-header {
+  background-color: #0000a0;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 4px;
+  font-weight: bold;
+  user-select: none;
+  cursor: move;
+  position: relative;
+  z-index: 2;
+  font-family: "Pixel", monospace;
+  font-size: 14px;
+  height: 14px; }
+
+.caption {
+  margin: 0; }
+
+.window-content {
+  background-color: white;
+  padding: 8px;
+  position: relative;
+  z-index: 1; }
+
+.window-controls {
+  display: flex;
+  align-items: center;
+  height: 100%; }
+
+.window-control {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.minimize {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: #c0c0c0;
+  background-repeat: no-repeat;
+  border: 1px solid black;
+  border-top-color: white;
+  border-left-color: white;
+  box-shadow: 1px 1px 0 1px #808080;
+  margin-left: 1px;
+  background-position: center;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8" width="8" height="8" fill="black"><polygon points="0,2 8,2 4,6" /></svg>'); }
+  .minimize:active {
+    background-color: #808080;
+    border-color: #808080;
+    box-shadow: none;
+    transform: translate(1px, 1px); }
+
+.maximize {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: #c0c0c0;
+  background-repeat: no-repeat;
+  border: 1px solid black;
+  border-top-color: white;
+  border-left-color: white;
+  box-shadow: 1px 1px 0 1px #808080;
+  margin-left: 1px;
+  background-position: center;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8" width="8" height="8" fill="black"><polygon points="0,6 8,6 4,2"/></svg>'); }
+  .maximize:active {
+    background-color: #808080;
+    border-color: #808080;
+    box-shadow: none;
+    transform: translate(1px, 1px); }
